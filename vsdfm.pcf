@@ -1,0 +1,28 @@
+# ==================================================
+# Clock
+# ==================================================
+set_io hw_clk 20
+
+
+# ==================================================
+# Push Buttons (Active LOW with pull-ups)
+# ==================================================
+set_io -pullup yes btn_toggle 11   # BTN0 - TOGGLE
+set_io -pullup yes btn_enter  12   # BTN1 - ENTER
+set_io -pullup yes btn_next   13   # BTN2 - NEXT
+set_io -pullup yes btn_reset  14   # BTN3 - RESET
+
+
+# ==================================================
+# RGB LED (Single onboard LED, active LOW)
+# ==================================================
+set_io led_red   39
+set_io led_green 40
+set_io led_blue  41
+
+
+# ==================================================
+# Buzzer (Active buzzer via resistor / transistor)
+# ==================================================
+set_io buzzer 19
+
